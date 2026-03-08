@@ -27,18 +27,19 @@
 
 Antes de ejecutar, asegúrate de tener PostgreSQL instalado y crea la base de datos:
 ```sql
-CREATE DATABASE literalura_db;
+CREATE DATABASE ["Nombre_de_la_base_de_datos_aqui"];
 ```
 
 Configura las credenciales en `src/main/resources/application.properties`:
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/literalura_db
-spring.datasource.username=postgres
-spring.datasource.password=postgres
+spring.datasource.url=jdbc:postgresql://localhost:["puerto_aqui"]/literalura_db
+spring.datasource.username=["nombre_de_usuario"]
+spring.datasource.password=["contrasena"]
 ```
 
 ![arrowRight](https://readmecodegen.vercel.app/api/social-icon?name=arrowRight&size=16&color=%232e9bf7) Ejecución:
 
 ```bash
-.\mvnw.cmd spring-boot:run
+.\mvnw.cmd spring-boot:run (en caso de ejecutar spring-boot con Maven en local)
 ```
+
